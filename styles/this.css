@@ -1,0 +1,24 @@
+.flexOuterCenter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.empty50 {
+  padding-top:50px;
+}
+
+input.normal {
+  border: 1.5px solid cornflowerblue;
+  padding: 5px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  font-family: courier;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.85;
+}
+
+input.normal::placeholder {
+
+}
