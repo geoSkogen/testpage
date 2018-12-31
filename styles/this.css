@@ -4,8 +4,20 @@
   justify-content: center;
 }
 
+.relShell {
+  position: relative;
+  padding: 1em;
+}
+
+.closeModal {
+  position: absolute;
+  right: -5%;
+  top: -5%;
+}
+
 .setCard {
   border: 1px solid black;
+  background-color: white;
   padding: 0.25em;
   margin: 0.25em;
   font-size: 40px;
@@ -14,9 +26,40 @@
   text-align: center;
 }
 
+.selected {
+  background-color: cornflowerblue;
+  opacity: 0.4;
+}
+
+.modal {
+  background-color: black;
+  color: white;
+  opacity: 0.45;
+  padding: 1em 2em 2em 2em;
+  position: absolute;
+  font-size: 22px;
+  font-family: courier;
+  font-weight: 600;
+  letter-spacing: 4px;
+  top: 20%;
+  display: none;
+}
+
 @media only screen and (min-width: 500px) {
   .setCard {
     min-width: 120px;
     max-width: 120px;
   }
+}
+
+#appShell {
+  position: relative;
+}
+
+#app {
+
+}
+
+#appModals {
+
 }
