@@ -1,7 +1,17 @@
+body {
+  width: 100%;
+}
+
 .flexOuterCenter {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.flexOuterSpace {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .relShell {
@@ -11,16 +21,25 @@
 
 .closeModal {
   position: absolute;
+  font-size: 30px;
   right: -5%;
   top: -5%;
 }
 
+.iconShell {
+  font-size: 30px;
+  color: white;
+  padding: 0.5em 1.5em;
+}
+
 .setCard {
   border: 1px solid black;
+  border-radius: 2px;
   background-color: white;
   padding: 0.25em;
   margin: 0.25em;
   font-size: 40px;
+  font-family: courier;
   min-width: 90px;
   max-width: 90px;
   text-align: center;
@@ -33,6 +52,7 @@
 
 .modal {
   background-color: black;
+  border-radius: 2px;
   color: white;
   opacity: 0.45;
   padding: 1em 2em 2em 2em;
@@ -56,10 +76,23 @@
   position: relative;
 }
 
-#app {
+#headband {
+  padding: 0.25em;
+  background-color: black;
+  width: 100%;
+  opacity: 0.45;
+}
 
+#app {
+  width: 90%;
+  padding-top: 1em;
+}
+
+@media only screen and (min-width: 1024px) {
+  #app {
+    width: 70%;
+  }
 }
 
 #appModals {
-
 }
