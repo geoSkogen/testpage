@@ -1047,7 +1047,7 @@ section.banner {
 </ul>
 <label for="sec-nav" style="display: none;">Mobile Menu</label>
 <span class="select"><span class="value"><span>Main Menu</span></span>
-<ul name="sec-nav" id="sec-nav" class="resp-mobile-nav" style="opacity: 1;background-color: white;padding: 1em 1em 1em 1em;font-size: 22px;position:relative;display:none;">
+<ul name="sec-nav" id="sec-nav" class="resp-mobile-nav" style="opacity:1;background-color:white;border:3px solid white;border-radius:3px;padding: 0 1em 1em 1em;font-size: 22px;position:relative;display:none;">
  <li id='accounts-li' class="sec-nav-li" data-href="https://www.peoplescu.org/accounts/" style="padding: 1em 1em 1em 0; margin: 0 0 0 0;">Bank</li>
 
     <ul id="accounts-nav" class="sec-nav-sub" data-disp="block,none" data-opac="0.1,1" style="display:none;position:absolute;z-index:8001;top:0;left:4em;background-color:white;padding-bottom:1em;">
@@ -1100,8 +1100,19 @@ var bottom_mobile_menus = document.querySelectorAll('.sec-nav-sub')
 var active_nav = null
 var last_click = null;
 var nav_menu = document.querySelector('.select')
+var background_classes = ['loginbox','title','content','banner','breadcrumb']
+
 nav_menu.addEventListener('click',function (event) {
   document.querySelector('#sec-nav').style.display='block'
+	background_classes.forEach( function (e) {
+		var el = {}
+		if (document.querySelector('.'+e)) {
+			el = document.querySelector('.'+e)
+			el.addEventListener('click',function (event) {
+				document.querySelector('#sec-nav').style.display='none'
+			})
+		}
+	})
 })
 
 top_mobile_navs.forEach( function (e) {
@@ -1170,10 +1181,6 @@ sub_nav_backs.forEach( function (e) {
     par.setAttribute('data-opac','0.1,1')
 
   })
-
-})
-
-window.addEventListener('click',function (event) {
 
 })
 
