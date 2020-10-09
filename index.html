@@ -1061,9 +1061,9 @@ section.banner {
 
     <ul id="accounts-nav" class="sec-nav-sub" data-disp="block,none" data-opac="0.1,1" style="display:none;position:absolute;z-index:8001;top:0;left:4em;background-color:white;padding-bottom:1em;">
         <li class="sec-nav-sub-li" style="position:relative"><div class="nav-sub-back" style="font-size:30px;position:absolute;top:0.73em;">«</div></li>
-        <a href="https://www.peoplescu.org/accounts/checking.shtml"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Checking Accounts</li></a>
-				<a href="https://www.peoplescu.org/accounts/savings.shtml"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Savings Accounts</li></a>
-				<a href="https://www.peoplescu.org/online/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Online Banking</li></a>
+        <a href="https://www.peoplescu.org/accounts/checking.shtml"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Checking</li></a>
+				<a href="https://www.peoplescu.org/accounts/savings.shtml"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Savings</li></a>
+				<a href="https://www.peoplescu.org/online/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Bank Online</li></a>
 				<a href="https://www.peoplescu.org/membership/index.shtml"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Join People's</li></a>
     </ul>
 
@@ -1081,10 +1081,10 @@ section.banner {
 
     <ul id="resources-nav" class="sec-nav-sub" data-disp="block,none" data-opac="0.1,1" style="display:none;position:absolute;z-index:8001;top:0;left:4em;background-color:white;padding-bottom:1em;">
         <a href=""><li class="sec-nav-sub-li" style="position:relative"><div class="nav-sub-back" style="font-size:30px;position:absolute;top:4.83em;">«</div></li>
-        <a href="https://resources.peoplescu.org/fraud/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Fraud Prevention</li></a>
+        <a href="https://resources.peoplescu.org/fraud/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Prevent Fraud</li></a>
         <a href="https://resources.peoplescu.org/auto-loans/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Auto Center</li></a>
         <a href="https://resources.peoplescu.org/home-loans/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Home Loans</li></a>
-				<a href="https://resources.peoplescu.org/personal-banking/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Personal Banking</li></a>
+			<!--	<a href="https://resources.peoplescu.org/personal-banking/"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Personal Banking</li></a>-->
         <a href="https://www.peoplescu.org/resources/calculators.shtml"><li class="sec-nav-sub-li" style="padding: 1em 1em 1em 0px; margin: 0px 0px 0px 1em;">Calculators</li></a>
     </ul>
 
@@ -1160,7 +1160,7 @@ top_mobile_navs.forEach( function (e) {
     })
     if (active_nav) {
       top_mobile_navs.forEach( function (e) {
-        this_rule = (e.id === active_nav) ? '0.5' : '0.25'
+        this_rule = (e.id === active_nav) ? '0.65' : '0.25'
         e.style.opacity =  this_rule
       })
     } else {
